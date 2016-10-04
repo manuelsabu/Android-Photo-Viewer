@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Banner"
+        android:src="#0c2cc9"
+        android:background="#0341fa"
+        android:minHeight="50dp"
+        android:maxHeight="50dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/Banner">
+
+        <GridLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SearchBut"
+            android:background="@android:drawable/ic_menu_search"
+            android:maxWidth="41dp"
+            android:minHeight="41dp"
+            android:minWidth="41dp"
+            android:maxHeight="41dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClearBut"
+            android:maxWidth="41dp"
+            android:minHeight="41dp"
+            android:minWidth="41dp"
+            android:maxHeight="41dp"
+            android:background="@android:drawable/ic_menu_rotate"
+            android:layout_toEndOf="@+id/SearchBut"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LoadBut"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:minHeight="41dp"
+            android:minWidth="41dp"
+            android:background="@android:drawable/ic_menu_more"
+            android:layout_toEndOf="@+id/ClearBut"
+            android:layout_centerHorizontal="true" />
+        </GridLayout>
+
+        <RatingBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/Filter"
+            android:maxHeight="50dp"
+            android:minHeight="50dp"
+            android:maxWidth="40dp"
+            android:minWidth="40dp"
+            android:stepSize="1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="0"
+            android:layout_column="28" />
+    </GridLayout>
+
+</RelativeLayout>

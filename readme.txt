@@ -1,0 +1,1 @@
+Program has been tested on the Nexus 6 emulator on android studios. Compiles, but does not have any gradle thing. When a picture is uploaded or pressed to enlarge, there may be a slight delay (at least in the emulator) due to the size of the image or internet connection.
